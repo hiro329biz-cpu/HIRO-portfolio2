@@ -83,7 +83,7 @@
     return true;
   }
 
-  function initOpening() {
+  function initOpening(onComplete) {
     const splash = document.querySelector(".splash");
     const root = document.documentElement;
     const hasPlayed = safeSessionGet("hiroIntroPlayed") === "true";
@@ -91,11 +91,13 @@
 
     function revealPage() {
       root.classList.remove("is-loading");
+      root.classList.remove("is-opening");
       root.classList.add("is-ready");
       if (splash) {
         splash.classList.add("is-hidden");
       }
       window.requestAnimationFrame(function () {
+        if (typeof onComplete === "function") onComplete();
         if (window.ScrollTrigger) window.ScrollTrigger.refresh();
       });
     }
@@ -107,10 +109,11 @@
 
     safeSessionSet("hiroIntroPlayed", "true");
     window.setTimeout(function () {
-      splash.classList.add("is-hidden");
-    }, 650);
+      root.classList.add("is-opening");
+      splash.classList.add("is-exiting");
+    }, 1450);
 
-    window.setTimeout(revealPage, 1000);
+    window.setTimeout(revealPage, 2000);
   }
 
   function initMobileMenu() {
@@ -838,16 +841,17 @@
   }
 
   function initHeroTextReveal() {
-    if (prefersReducedMotion || !window.gsap) return;
+    if (prefersReducedMotion || !window.gsap) return null;
 
     const gsap = window.gsap;
     const heroAnimatedTitle = document.querySelector(".hero-jp-title");
+    let heroTimeline = null;
 
     if (heroAnimatedTitle) {
       const heroCharacters = splitTextIntoCharacters(heroAnimatedTitle);
       if (heroCharacters.length) {
         setCharacterStartState(heroCharacters, true);
-        const heroTimeline = gsap.timeline();
+        heroTimeline = gsap.timeline({ paused: true });
         heroTimeline.to(heroCharacters, {
           autoAlpha: 1,
           x: 0,
@@ -861,6 +865,15 @@
         });
       }
     }
+
+    if (!heroTimeline) return null;
+
+    let hasStarted = false;
+    return function playHeroTextReveal() {
+      if (hasStarted) return;
+      hasStarted = true;
+      heroTimeline.play(0);
+    };
   }
 
   function initSectionTextReveal() {
@@ -1781,7 +1794,8 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    initOpening();
+    const playHeroTextReveal = initHeroTextReveal();
+    initOpening(playHeroTextReveal);
     initMobileMenu();
     initAdaptiveHeader();
     initBackToTop();
@@ -1790,7 +1804,6 @@
     initParticleCanvas();
     initHeroKeyword();
     initHeroVisual();
-    initHeroTextReveal();
     initContactForm();
     initSmoothHeaderOffset();
     scheduleWorksSlider();

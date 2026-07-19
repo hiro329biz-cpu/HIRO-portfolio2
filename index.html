@@ -46,7 +46,7 @@
   />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700;900&amp;display=swap" />
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css" /></noscript>
-  <link rel="stylesheet" href="css/style.min.css?v=20260719-4" />
+  <link rel="stylesheet" href="css/style.min.css?v=20260719-5" />
 
   <script>
     (function () {
@@ -66,7 +66,7 @@
         window.setTimeout(function () {
           root.classList.remove("is-loading");
           root.classList.add("is-ready");
-        }, 1400);
+        }, 2400);
       }
     }());
   </script>
@@ -178,11 +178,28 @@
   <canvas id="particle-canvas" aria-hidden="true"></canvas>
 
   <div class="splash" aria-hidden="true">
-    <svg class="splash-logo" viewBox="0 0 760 160" role="img" aria-label="HIRO CODE">
-      <text class="splash-logo-stroke" x="380" y="96" text-anchor="middle">HIRO CODE</text>
-      <text class="splash-logo-fill" x="380" y="96" text-anchor="middle">HIRO CODE</text>
-    </svg>
-    <p class="splash-caption">AI WEB STUDIO / SAPPORO</p>
+    <div class="splash-panel splash-panel-top"></div>
+    <div class="splash-panel splash-panel-bottom"></div>
+    <div class="splash-atmosphere"></div>
+    <p class="splash-meta splash-meta-top"><span>01</span> CREATIVE PORTFOLIO</p>
+    <div class="splash-stage">
+      <div class="splash-orbit"><span></span></div>
+      <div class="splash-logo-wrap">
+        <span class="splash-logo-line splash-logo-line-left"></span>
+        <svg class="splash-logo" viewBox="0 0 760 160" role="img" aria-label="HIRO CODE">
+          <text class="splash-logo-stroke" x="380" y="96" text-anchor="middle">HIRO CODE</text>
+          <text class="splash-logo-fill" x="380" y="96" text-anchor="middle">HIRO CODE</text>
+        </svg>
+        <span class="splash-logo-line splash-logo-line-right"></span>
+      </div>
+      <div class="splash-signature">
+        <span>AI WEB STUDIO</span>
+        <i></i>
+        <span>SAPPORO</span>
+      </div>
+      <div class="splash-progress"><span></span></div>
+    </div>
+    <p class="splash-meta splash-meta-bottom">DESIGN <span>/</span> CODE <span>/</span> MOTION</p>
   </div>
 
   <div class="frame-line frame-top" aria-hidden="true"></div>
@@ -913,6 +930,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-  <script src="js/main.min.js?v=20260719-3" defer></script>
+  <script src="js/main.min.js?v=20260719-5" defer></script>
 </body>
 </html>
