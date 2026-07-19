@@ -4,81 +4,177 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>札幌のWeb制作・コーディング | 堀江太樹 - AI活用の高品質サイト制作</title>
-  <meta name="description" content="北海道札幌市を拠点に、AIを活用したWeb制作・コーディング・WordPress構築・Shopify構築を対応。短納期でも品質にこだわり、公開後の改善までサポートします。" />
-  <meta name="keywords" content="Web制作,コーディング,WordPress構築,Shopify構築,AI Web制作,札幌,北海道,堀江太樹,GSAP アニメーション,レスポンシブ対応,EC構築,LP制作,フリーランス コーダー" />
+  <meta name="description" content="北海道札幌市を拠点に、AIを活用したWeb制作・コーディング・WordPress構築・Shopify構築に対応。短納期でも品質にこだわり、公開後の改善までサポートします。" />
   <meta name="author" content="堀江太樹" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ja_JP" />
-  <meta property="og:url" content="https://hiro-portfolio.com" />
+  <meta property="og:url" content="https://hiro-portfolio.com/" />
   <meta property="og:title" content="札幌のWeb制作・コーディング | 堀江太樹" />
   <meta property="og:description" content="AI活用で短納期・高品質なWeb制作。コーディング、WordPress、Shopify構築を一貫対応。札幌を拠点に公開後の改善までサポートします。" />
   <meta property="og:site_name" content="堀江太樹 | Web制作ポートフォリオ" />
-  <meta property="og:image" content="https://hiro-portfolio.com/images/brand/ogp.png" />
+  <meta property="og:image" content="https://hiro-portfolio.com/images/brand/ogp-v2.jpg" />
+  <meta property="og:image:secure_url" content="https://hiro-portfolio.com/images/brand/ogp-v2.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="堀江太樹 Web制作ポートフォリオの制作実績イメージ" />
+  <meta property="og:image:alt" content="HIRO CODE 札幌のWeb制作ポートフォリオ" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="札幌のWeb制作・コーディング | 堀江太樹" />
   <meta name="twitter:description" content="AI活用で短納期・高品質なWeb制作。コーディング、WordPress、Shopify構築を一貫対応。" />
-  <meta name="twitter:image" content="https://hiro-portfolio.com/images/brand/ogp.png" />
-  <meta name="twitter:image:alt" content="堀江太樹 Web制作ポートフォリオの制作実績イメージ" />
-  <meta name="robots" content="index, follow" />
+  <meta name="twitter:image" content="https://hiro-portfolio.com/images/brand/ogp-v2.jpg" />
+  <meta name="twitter:image:alt" content="HIRO CODE 札幌のWeb制作ポートフォリオ" />
+  <meta name="twitter:url" content="https://hiro-portfolio.com/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="theme-color" content="#0C3F9B" />
-  <link rel="canonical" href="https://hiro-portfolio.com" />
+  <meta name="theme-color" content="#4A6FA5" />
+  <link rel="canonical" href="https://hiro-portfolio.com/" />
+  <link rel="alternate" hreflang="ja" href="https://hiro-portfolio.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://hiro-portfolio.com/" />
   <link rel="icon" href="images/brand/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="images/brand/favicon.png" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="preload"
+    as="image"
+    type="image/avif"
+    href="images/hero/hero-web-creative-v1-820.avif"
+    imagesrcset="images/hero/hero-web-creative-v1-480.avif 480w, images/hero/hero-web-creative-v1-820.avif 820w, images/hero/hero-web-creative-v1.avif 1122w"
+    imagesizes="(max-width: 480px) 88vw, (max-width: 768px) 390px, (max-width: 1080px) 430px, 410px"
+    fetchpriority="high"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700;900&amp;display=swap" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css" /></noscript>
+  <link rel="stylesheet" href="css/style.min.css?v=20260719-4" />
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var shouldPlayIntro = true;
+      root.classList.add("js");
+      try {
+        shouldPlayIntro = window.sessionStorage.getItem("hiroIntroPlayed") !== "true";
+      } catch (error) {
+        shouldPlayIntro = true;
+      }
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        shouldPlayIntro = false;
+      }
+      if (shouldPlayIntro) {
+        root.classList.add("is-loading");
+        window.setTimeout(function () {
+          root.classList.remove("is-loading");
+          root.classList.add("is-ready");
+        }, 1400);
+      }
+    }());
+  </script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "堀江太樹 Web制作",
-    "url": "https://hiro-portfolio.com",
-    "image": "https://hiro-portfolio.com/images/brand/ogp.png",
-    "description": "北海道札幌市のWeb制作者。AI活用のコーディング、WordPress構築、Shopify EC構築を一貫対応。",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "札幌市",
-      "addressRegion": "北海道",
-      "addressCountry": "JP"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "堀江太樹",
-      "jobTitle": "Web Creator"
-    },
-    "serviceType": ["Web制作","コーディング","WordPress構築","Shopify構築","EC構築"],
-    "areaServed": {
-      "@type": "Place",
-      "name": "日本全国（札幌拠点）"
-    },
-    "priceRange": "お問い合わせください"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "堀江太樹 Web制作ポートフォリオ",
-    "url": "https://hiro-portfolio.com"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://hiro-portfolio.com" }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://hiro-portfolio.com/#website",
+        "url": "https://hiro-portfolio.com/",
+        "name": "堀江太樹 Web制作ポートフォリオ",
+        "inLanguage": "ja",
+        "publisher": { "@id": "https://hiro-portfolio.com/#business" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://hiro-portfolio.com/#webpage",
+        "url": "https://hiro-portfolio.com/",
+        "name": "札幌のWeb制作・コーディング | 堀江太樹",
+        "description": "北海道札幌市を拠点に、AIを活用したWeb制作・コーディング・WordPress構築・Shopify構築に対応しています。",
+        "isPartOf": { "@id": "https://hiro-portfolio.com/#website" },
+        "about": { "@id": "https://hiro-portfolio.com/#business" },
+        "primaryImageOfPage": { "@id": "https://hiro-portfolio.com/#primaryimage" },
+        "dateModified": "2026-07-19",
+        "inLanguage": "ja"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://hiro-portfolio.com/#primaryimage",
+        "url": "https://hiro-portfolio.com/images/brand/ogp-v2.jpg",
+        "contentUrl": "https://hiro-portfolio.com/images/brand/ogp-v2.jpg",
+        "width": 1200,
+        "height": 630,
+        "caption": "HIRO CODE 札幌のWeb制作ポートフォリオ"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://hiro-portfolio.com/#person",
+        "name": "堀江太樹",
+        "url": "https://hiro-portfolio.com/",
+        "jobTitle": "Web Creator",
+        "image": "https://hiro-portfolio.com/images/profile/mv.jpeg",
+        "knowsAbout": ["Web制作", "Webデザイン", "コーディング", "WordPress", "Shopify", "AI活用"]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://hiro-portfolio.com/#business",
+        "name": "堀江太樹 Web制作",
+        "url": "https://hiro-portfolio.com/",
+        "image": "https://hiro-portfolio.com/images/brand/ogp-v2.jpg",
+        "description": "北海道札幌市を拠点に、AIを活用したWeb制作、コーディング、WordPress構築、Shopify構築を提供しています。",
+        "founder": { "@id": "https://hiro-portfolio.com/#person" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "札幌市",
+          "addressRegion": "北海道",
+          "addressCountry": "JP"
+        },
+        "areaServed": { "@type": "Country", "name": "日本" },
+        "serviceType": ["Web制作", "コーディング", "WordPress構築", "Shopify構築", "EC構築"],
+        "priceRange": "お問い合わせください"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://hiro-portfolio.com/#faq-page",
+        "url": "https://hiro-portfolio.com/#faq",
+        "isPartOf": { "@id": "https://hiro-portfolio.com/#webpage" },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "相談や見積りは無料ですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "はい、ヒアリングとお見積りは無料です。内容が固まっていない段階でも、お気軽にご相談ください。" }
+          },
+          {
+            "@type": "Question",
+            "name": "まだ依頼内容が固まっていなくても相談できますか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "はい。サイトの目的や現在のお悩みを伺い、必要なページや機能を一緒に整理してご提案します。" }
+          },
+          {
+            "@type": "Question",
+            "name": "コーディングだけでも依頼できますか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "はい。ご支給いただいたデザインデータをもとに、レスポンシブ対応やアニメーションを含めて実装できます。" }
+          },
+          {
+            "@type": "Question",
+            "name": "WordPressやShopifyにも対応していますか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "はい。WordPressのオリジナルテーマ制作や、ShopifyのLiquidカスタマイズに対応しています。" }
+          },
+          {
+            "@type": "Question",
+            "name": "制作期間はどのくらいですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "ページ数や機能、素材の準備状況によって異なります。ヒアリング後に、作業範囲とあわせて無理のないスケジュールをご提案します。" }
+          },
+          {
+            "@type": "Question",
+            "name": "札幌以外からも依頼できますか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "はい。オンラインで全国からのご相談に対応しています。進行状況もわかりやすく共有します。" }
+          }
+        ]
+      }
     ]
   }
   </script>
 </head>
-<body class="is-loading">
+<body>
+  <a class="skip-link" href="#main-content">本文へスキップ</a>
   <canvas id="particle-canvas" aria-hidden="true"></canvas>
 
   <div class="splash" aria-hidden="true">
@@ -101,42 +197,43 @@
 
   <div class="site-shell">
     <header class="site-header" id="header">
-      <a class="site-logo" href="#" aria-label="HIRO CODE ホーム">
+      <a class="site-logo" href="#hero" aria-label="HIRO CODE ホーム">
         <img src="images/brand/logo.png" alt="HIRO CODE" width="250" height="60" decoding="async" />
       </a>
       <nav class="site-nav" aria-label="メインナビゲーション">
         <a href="#about">ABOUT</a>
+        <a href="#works">WORKS</a>
         <a href="#service">SERVICE</a>
         <a href="#flow">FLOW</a>
-        <a href="#works">WORKS</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">CONTACT</a>
       </nav>
-      <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="メニューを開閉">
+      <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="メニューを開く">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </header>
 
-    <nav class="mobile-menu" id="mobile-menu" aria-label="モバイルナビゲーション">
+    <nav class="mobile-menu" id="mobile-menu" aria-label="モバイルナビゲーション" aria-hidden="true" inert>
       <a href="#about">ABOUT</a>
+      <a href="#works">WORKS</a>
       <a href="#service">SERVICE</a>
       <a href="#flow">FLOW</a>
-      <a href="#works">WORKS</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">CONTACT</a>
     </nav>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="hero section-block" id="hero" aria-label="メインビジュアル">
-        <div class="container hero-grid">
-          <div class="hero-copy reveal-rotate">
-            <p class="section-kicker">AI × DESIGN × CODE</p>
-            <p class="hero-jp-title">「 想いを届ける Web制作 」</p>
-            <h1>Designing websites that carry your story.</h1>
-            <p class="hero-lead">札幌を拠点に、AIを活用した短納期・高品質なWebサイトを制作。想いを、成果につながるデザインとコードへ。</p>
+        <div class="container">
+          <div class="hero-copy">
+            <h1 class="hero-jp-title">「 想いを届けるWeb制作 」</h1>
+            <p class="hero-en-title">Designing websites<br />that carry your story.</p>
+            <p class="hero-lead">札幌を拠点に、目的や課題を丁寧に整理し、伝わるだけでなく成果につながるWebサイトを制作。想いを、使いやすいデザインと確かなコードへ。</p>
             <div class="hero-actions" aria-label="主要リンク">
-              <a class="text-link" href="#works">VIEW WORKS</a>
-              <a class="text-link" href="#contact">CONTACT</a>
+              <a class="button-link button-link-primary" href="#contact">無料相談・お見積り</a>
+              <a class="button-link button-link-secondary" href="#works">制作実績を見る</a>
             </div>
             <ul class="hero-tags" aria-label="対応領域">
               <li>Web Design</li>
@@ -145,146 +242,487 @@
               <li>Motion</li>
             </ul>
           </div>
-
-          <div class="hero-visual reveal-rotate">
-            <div class="tilt-card" data-tilt-card>
-              <picture>
-                <source srcset="images/profile/mv.webp" type="image/webp" />
-                <img src="images/profile/mv.jpeg" alt="堀江太樹 - 札幌のWeb制作者" width="768" height="1024" decoding="async" />
-              </picture>
-              <div class="tilt-card-caption">
-                <span>Web Creator</span>
-                <strong>Hiroki Horie</strong>
+          <div class="hero-visual" data-hero-visual>
+            <div class="hero-keyword" aria-hidden="true">
+              <div class="hero-keyword-swap" data-keyword>
+                <span class="hero-keyword-initial">D</span>
+                <span class="hero-keyword-word">DESIGN</span>
               </div>
+              <span class="hero-keyword-dot"></span>
             </div>
+            <figure class="hero-image-card" data-hero-card>
+              <div class="hero-image-frame">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="images/hero/hero-web-creative-v1-480.avif 480w, images/hero/hero-web-creative-v1-820.avif 820w, images/hero/hero-web-creative-v1.avif 1122w"
+                    sizes="(max-width: 480px) 88vw, (max-width: 768px) 390px, (max-width: 1080px) 430px, 410px"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="images/hero/hero-web-creative-v1-480.webp 480w, images/hero/hero-web-creative-v1-820.webp 820w, images/hero/hero-web-creative-v1.webp 1122w"
+                    sizes="(max-width: 480px) 88vw, (max-width: 768px) 390px, (max-width: 1080px) 430px, 410px"
+                  />
+                  <img
+                    src="images/hero/hero-web-creative-v1.png"
+                    alt="Webデザイン・コード・AIの創造性を表現したパステルカラーの3Dビジュアル"
+                    width="1122"
+                    height="1402"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="async"
+                    data-hero-image
+                  />
+                </picture>
+              </div>
+              <figcaption>
+                <span>AI × DESIGN × CODE</span>
+                <span>SAPPORO / JP</span>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="about section-block" id="about" aria-label="自己紹介">
+      <section class="about section-block" id="about" aria-label="自己紹介と対応方針">
         <div class="container split-section">
-          <div class="section-title reveal-rotate">
-            <p class="section-kicker">ABOUT ME</p>
-            <h2>はじめまして、Hiroです。</h2>
+          <div class="section-title" data-section-title data-title-label="ABOUT">
+            <div class="section-title-copy">
+              <p class="section-kicker">ABOUT ME</p>
+              <h2>はじめまして、Hiroです。</h2>
+            </div>
+            <div class="section-title-art" aria-hidden="true">
+              <span class="title-art-orbit"></span>
+              <span class="title-art-disc"></span>
+              <span class="title-art-square"></span>
+              <span class="title-art-index">01</span>
+            </div>
           </div>
-          <div class="section-body reveal-rotate">
-            <p>北海道札幌市を拠点にWebサイト制作を行っている堀江太樹です。アパレル企業での販売・店舗運営の経験を経て、Web制作の世界へ。「お客様に届ける」という視点を常に持ち、ビジネスの成果に直結するWebサイトを制作しています。</p>
-            <p>現在はAIをWeb制作のパートナーとして積極的に活用しています。構成案のブレスト、コードの自動生成、画像素材の最適化など、AIの力を借りることで制作スピードと品質を大幅に向上。その分、デザインの細部やアニメーションの心地よさなど、人の感性でしか判断できない部分に時間をかけることが可能になりました。</p>
-            <p>制作して終わりではなく、公開後のサポートまで責任を持ちます。</p>
-            <p>AI × 人の手で、より速く・より高品質な制作体験をお届けします。</p>
+          <div class="about-content">
+            <div class="about-visual reveal-rotate">
+              <div class="tilt-card" data-tilt-card>
+                <picture>
+                  <source srcset="images/profile/mv-400.webp 400w, images/profile/mv.webp 768w" sizes="(max-width: 768px) calc(100vw - 52px), 340px" type="image/webp" />
+                  <img src="images/profile/mv.jpeg" alt="堀江太樹 - 札幌のWeb制作者" width="768" height="1024" loading="lazy" decoding="async" fetchpriority="low" />
+                </picture>
+                <div class="tilt-card-caption">
+                  <span>Web Creator</span>
+                  <strong>Hiroki Horie</strong>
+                </div>
+              </div>
+            </div>
+            <div class="section-body reveal-rotate">
+              <p>北海道札幌市を拠点にWebサイト制作を行っている堀江太樹です。アパレル企業での販売・店舗運営の経験を経て、Web制作の世界へ。「お客様に届ける」という視点を常に持ち、ビジネスの成果に直結するWebサイトを制作しています。</p>
+              <p>制作では、目的やターゲット、必要な導線を最初に整理します。効率化できる工程にはAIを取り入れつつ、構成・デザイン・操作性・表示速度・公開前の動作は人の目で丁寧に確認し、伝わりやすく運用しやすい形へ仕上げます。</p>
+              <p>制作して終わりではなく、公開後のサポートまで責任を持ちます。</p>
+              <p>ご相談から公開後まで、安心して活用し続けられるWeb制作をお届けします。</p>
+            </div>
+          </div>
+
+          <div class="trust-panel" aria-labelledby="trust-title">
+            <div class="trust-panel-head">
+              <p class="section-kicker">WORK STYLE</p>
+              <h3 id="trust-title">安心してご相談いただくために</h3>
+              <p>ご相談から公開後まで、進行と対応範囲をわかりやすく共有しながら伴走します。</p>
+            </div>
+            <ul class="trust-grid">
+              <li class="trust-item">
+                <p class="trust-label">RESPONSE</p>
+                <p class="trust-detail"><strong>2営業日以内</strong><span>お問い合わせへの返信目安</span></p>
+              </li>
+              <li class="trust-item">
+                <p class="trust-label">AREA</p>
+                <p class="trust-detail"><strong>全国オンライン</strong><span>札幌を拠点に全国対応</span></p>
+              </li>
+              <li class="trust-item">
+                <p class="trust-label">PROGRESS</p>
+                <p class="trust-detail"><strong>進行を見える化</strong><span>範囲・スケジュールを事前共有</span></p>
+              </li>
+              <li class="trust-item">
+                <p class="trust-label">SUPPORT</p>
+                <p class="trust-detail"><strong>公開後も伴走</strong><span>運用・修正まで継続サポート</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="works section-block" id="works" aria-label="制作実績">
+        <div class="container">
+          <div class="section-title section-title-wide" data-section-title data-title-label="WORKS">
+            <div class="section-title-copy">
+              <p class="section-kicker">WORKS</p>
+              <h2>制作実績</h2>
+              <p>目的や業種に合わせて制作したWebサイトの一部をご紹介します。</p>
+            </div>
+            <div class="section-title-art" aria-hidden="true">
+              <span class="title-art-orbit"></span>
+              <span class="title-art-disc"></span>
+              <span class="title-art-square"></span>
+              <span class="title-art-index">02</span>
+            </div>
+          </div>
+
+          <p class="works-disclaimer">掲載している5件は、設計・デザイン・実装スキルをご確認いただくための自主制作です。実案件での対応範囲や進め方は、ご相談時に個別にご案内します。</p>
+
+          <div class="works-slider-shell">
+            <div class="works-slider-head">
+              <div class="works-slider-guide">
+                <p class="works-slider-hint"><span>DRAG</span> / SWIPE</p>
+                <p class="works-counter" aria-live="polite" aria-atomic="true">
+                  <span data-works-current>01</span>
+                  <span aria-hidden="true">/</span>
+                  <span data-works-total>05</span>
+                </p>
+              </div>
+              <div class="works-controls" aria-label="制作実績のスライダー操作">
+                <button class="works-nav works-prev" type="button" aria-label="前の制作実績へ" aria-controls="works-slider">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="works-nav works-next" type="button" aria-label="次の制作実績へ" aria-controls="works-slider">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="works-slider swiper" id="works-slider" data-works-slider role="region" aria-roledescription="カルーセル" aria-label="制作実績スライダー">
+              <div class="works-list swiper-wrapper" data-works-list>
+                <a class="work-row swiper-slide" data-work-card href="https://hiro329biz-cpu.github.io/-FLOW/" target="_blank" rel="noopener noreferrer">
+                  <picture>
+                    <source srcset="images/works/mockup_andflow-640.webp 640w, images/works/mockup_andflow.webp 1000w" sizes="(max-width: 480px) 72vw, (max-width: 900px) calc(100vw - 176px), 300px" type="image/webp" />
+                    <img src="images/works/mockup_andflow.jpg" alt="＆FLOW 自主制作ブランドサイト" width="1000" height="750" loading="lazy" decoding="async" fetchpriority="low" />
+                  </picture>
+                  <div class="work-content">
+                    <div class="work-meta">
+                      <p class="work-category"><span>自主制作</span>ブランドサイト</p>
+                      <span class="work-index">01</span>
+                    </div>
+                    <h3>＆FLOW</h3>
+                    <p>ブランドの世界観がひと目で伝わるよう、余白・配色・アニメーションの心地よさまで丁寧に設計しました。</p>
+                    <dl class="work-facts">
+                      <dt>TYPE</dt><dd>自主制作</dd>
+                      <dt>ROLE</dt><dd>デザイン・コーディング</dd>
+                      <dt>FOCUS</dt><dd>余白・配色・モーション設計</dd>
+                      <dt>RESULT</dt><dd>レスポンシブ対応とモーションを実装</dd>
+                    </dl>
+                    <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li></ul>
+                  </div>
+                  <span class="work-view" aria-hidden="true">VIEW SITE</span>
+                  <span class="work-arrow" aria-hidden="true">↗</span>
+                  <span class="visually-hidden">新しいタブでサイトを開きます</span>
+                </a>
+
+                <a class="work-row swiper-slide" data-work-card href="https://hiro329biz-cpu.github.io/Hair_salon-site/" target="_blank" rel="noopener noreferrer">
+                  <picture>
+                    <source srcset="images/works/mockup_fleur-640.webp 640w, images/works/mockup_fleur.webp 1000w" sizes="(max-width: 480px) 72vw, (max-width: 900px) calc(100vw - 176px), 300px" type="image/webp" />
+                    <img src="images/works/mockup_fleur.jpg" alt="Fleur 自主制作美容サロンサイト" width="1000" height="859" loading="lazy" decoding="async" fetchpriority="low" />
+                  </picture>
+                  <div class="work-content">
+                    <div class="work-meta">
+                      <p class="work-category"><span>自主制作</span>美容サロンサイト</p>
+                      <span class="work-index">02</span>
+                    </div>
+                    <h3>Fleur</h3>
+                    <p>美容サロンの上質で落ち着いた世界観を、余白を活かしたレイアウトと柔らかな写真配置で表現しました。</p>
+                    <dl class="work-facts">
+                      <dt>TYPE</dt><dd>自主制作</dd>
+                      <dt>ROLE</dt><dd>デザイン・コーディング</dd>
+                      <dt>FOCUS</dt><dd>写真と余白による世界観づくり</dd>
+                      <dt>RESULT</dt><dd>サロンの雰囲気とサービスが伝わるレスポンシブサイトとして公開</dd>
+                    </dl>
+                    <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li></ul>
+                  </div>
+                  <span class="work-view" aria-hidden="true">VIEW SITE</span>
+                  <span class="work-arrow" aria-hidden="true">↗</span>
+                  <span class="visually-hidden">新しいタブでサイトを開きます</span>
+                </a>
+
+                <a class="work-row swiper-slide" data-work-card href="https://hiro329biz-cpu.github.io/Architectural-site/" target="_blank" rel="noopener noreferrer">
+                  <picture>
+                    <source srcset="images/works/mockup_takumi-640.webp 640w, images/works/mockup_takumi.webp 1000w" sizes="(max-width: 480px) 72vw, (max-width: 900px) calc(100vw - 176px), 300px" type="image/webp" />
+                    <img src="images/works/mockup_takumi.jpg" alt="匠建設株式会社 自主制作コーポレートサイト" width="1000" height="903" loading="lazy" decoding="async" fetchpriority="low" />
+                  </picture>
+                  <div class="work-content">
+                    <div class="work-meta">
+                      <p class="work-category"><span>自主制作</span>コーポレートサイト</p>
+                      <span class="work-index">03</span>
+                    </div>
+                    <h3>匠建設株式会社</h3>
+                    <p>建設会社としての信頼感が伝わるよう、力強い写真を軸に情報とお問い合わせまでの流れを整理しました。</p>
+                    <dl class="work-facts">
+                      <dt>TYPE</dt><dd>自主制作</dd>
+                      <dt>ROLE</dt><dd>デザイン・コーディング</dd>
+                      <dt>FOCUS</dt><dd>事業・実績・お問い合わせ導線</dd>
+                      <dt>RESULT</dt><dd>信頼感と情報の探しやすさを両立</dd>
+                    </dl>
+                    <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li></ul>
+                  </div>
+                  <span class="work-view" aria-hidden="true">VIEW SITE</span>
+                  <span class="work-arrow" aria-hidden="true">↗</span>
+                  <span class="visually-hidden">新しいタブでサイトを開きます</span>
+                </a>
+
+                <a class="work-row swiper-slide" data-work-card href="https://hiro329biz-cpu.github.io/AURORA-MEDIA/" target="_blank" rel="noopener noreferrer">
+                  <picture>
+                    <source srcset="images/works/mockup_aurora-640.webp 640w, images/works/mockup_aurora.webp 1000w" sizes="(max-width: 480px) 72vw, (max-width: 900px) calc(100vw - 176px), 300px" type="image/webp" />
+                    <img src="images/works/mockup_aurora.jpg" alt="AURORA MEDIA 自主制作メディア企業サイト" width="1000" height="900" loading="lazy" decoding="async" fetchpriority="low" />
+                  </picture>
+                  <div class="work-content">
+                    <div class="work-meta">
+                      <p class="work-category"><span>自主制作</span>メディア企業サイト</p>
+                      <span class="work-index">04</span>
+                    </div>
+                    <h3>AURORA MEDIA</h3>
+                    <p>広告メディア企業のスピード感を表現しながら、事業内容からお問い合わせまで迷わず進める構成にしました。</p>
+                    <dl class="work-facts">
+                      <dt>TYPE</dt><dd>自主制作</dd>
+                      <dt>ROLE</dt><dd>デザイン・コーディング</dd>
+                      <dt>FOCUS</dt><dd>情報整理とCTA導線</dd>
+                      <dt>RESULT</dt><dd>事業理解からお問い合わせまでの導線を整理</dd>
+                    </dl>
+                    <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li></ul>
+                  </div>
+                  <span class="work-view" aria-hidden="true">VIEW SITE</span>
+                  <span class="work-arrow" aria-hidden="true">↗</span>
+                  <span class="visually-hidden">新しいタブでサイトを開きます</span>
+                </a>
+
+                <a class="work-row swiper-slide" data-work-card href="https://wp.hiro-portfolio.com/" target="_blank" rel="noopener noreferrer">
+                  <picture>
+                    <source srcset="images/works/mockup_globalstandard_new-640.webp 640w, images/works/mockup_globalstandard_new.webp 1000w" sizes="(max-width: 480px) 72vw, (max-width: 900px) calc(100vw - 176px), 300px" type="image/webp" />
+                    <img src="images/works/mockup_globalstandard_new.jpg" alt="Global standard 自主制作WordPressサイト" width="1000" height="802" loading="lazy" decoding="async" fetchpriority="low" />
+                  </picture>
+                  <div class="work-content">
+                    <div class="work-meta">
+                      <p class="work-category"><span>自主制作</span>WordPressサイト</p>
+                      <span class="work-index">05</span>
+                    </div>
+                    <h3>Global standard</h3>
+                    <p>グローバルな信頼感と先進性が伝わるよう、情報設計からWordPressでの更新運用まで見据えて構成しました。</p>
+                    <dl class="work-facts">
+                      <dt>TYPE</dt><dd>自主制作</dd>
+                      <dt>ROLE</dt><dd>デザイン・コーディング・WordPress</dd>
+                      <dt>FOCUS</dt><dd>更新運用を見据えた情報設計</dd>
+                      <dt>RESULT</dt><dd>WordPressでの更新運用を想定したデモ環境として公開</dd>
+                    </dl>
+                    <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li><li>WordPress</li></ul>
+                  </div>
+                  <span class="work-view" aria-hidden="true">VIEW SITE</span>
+                  <span class="work-arrow" aria-hidden="true">↗</span>
+                  <span class="visually-hidden">新しいタブでサイトを開きます</span>
+                </a>
+              </div>
+              <div class="works-pagination swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="service section-block" id="service" aria-label="提供サービス">
         <div class="container">
-          <div class="section-title section-title-wide reveal-rotate">
-            <p class="section-kicker">SERVICE</p>
-            <h2>提供サービス</h2>
-            <p>想いをカタチにする、4つのアプローチ。</p>
+          <div class="section-title section-title-wide" data-section-title data-title-label="SERVICE">
+            <div class="section-title-copy">
+              <p class="section-kicker">SERVICE</p>
+              <h2>提供サービス</h2>
+              <p>Webサイト制作からCMS・EC構築まで、目的と運用に合わせてご提案します。</p>
+            </div>
+            <div class="section-title-art" aria-hidden="true">
+              <span class="title-art-orbit"></span>
+              <span class="title-art-disc"></span>
+              <span class="title-art-square"></span>
+              <span class="title-art-index">03</span>
+            </div>
           </div>
 
-          <div class="service-grid">
-            <article class="service-card reveal-rotate">
+          <div class="service-ai-note">
+            <p>QUALITY CHECK</p>
+            <p>目的に合った設計から、細部の使いやすさ、端末ごとの表示、公開前の動作確認まで、人の目で一つずつ確かめて仕上げます。</p>
+          </div>
+
+          <div class="service-grid" data-service-grid>
+            <article class="service-card" data-service-card>
               <div class="service-media">
-                <img src="images/services/service_ai.svg" alt="AI Web制作アイコン" width="150" height="150" loading="lazy" decoding="async" />
-                <span>01</span>
+                <div class="service-icon">
+                  <img src="images/services/service_ai.svg" alt="" width="150" height="150" loading="lazy" decoding="async" />
+                </div>
+                <span class="service-number">01</span>
               </div>
-              <h3>AI × Web</h3>
-              <p class="service-subtitle">AI × Web制作</p>
-              <p>AIで構成・コード生成・画像最適化を効率化。短納期・低コストで高品質なサイトを実現します。</p>
+              <p class="service-eyebrow">WEB DESIGN &amp; BUILD</p>
+              <h3>Webサイト・LP制作</h3>
+              <p>目的や伝えたい想いを整理し、構成・デザイン・実装まで一貫して制作します。</p>
               <ul>
-                <li>AI構成案ブレスト</li>
-                <li>コード自動生成</li>
-                <li>画像最適化</li>
-                <li>短納期・低コスト</li>
+                <li>構成・情報設計</li>
+                <li>Webデザイン</li>
+                <li>レスポンシブ実装</li>
               </ul>
+              <p class="service-fit"><span>こんな方に</span>新規サイトやLPを、企画段階からまとめて相談したい方</p>
             </article>
 
-            <article class="service-card reveal-rotate">
+            <article class="service-card" data-service-card>
               <div class="service-media">
-                <img src="images/services/service_coding.png" alt="コーディング・修正アイコン" width="177" height="150" loading="lazy" decoding="async" />
-                <span>02</span>
+                <div class="service-icon">
+                  <img src="images/services/service_coding.png" alt="" width="177" height="150" loading="lazy" decoding="async" />
+                </div>
+                <span class="service-number">02</span>
               </div>
-              <h3>Coding</h3>
-              <p class="service-subtitle">コーディング・修正</p>
-              <p>デザインに忠実なコーディングとGSAPアニメーション実装。LP〜数ページまで対応可能です。</p>
+              <p class="service-eyebrow">CODING &amp; MOTION</p>
+              <h3>コーディング・修正</h3>
+              <p>デザインの意図をくみ取り、レスポンシブ対応と心地よい動きまで丁寧に実装します。</p>
               <ul>
                 <li>ピクセルパーフェクト</li>
                 <li>レスポンシブ対応</li>
-                <li>GSAP アニメーション</li>
-                <li>CSS設計</li>
+                <li>GSAPアニメーション</li>
               </ul>
+              <p class="service-fit"><span>こんな方に</span>デザインデータからの実装や、制作パートナーを探している方</p>
             </article>
 
-            <article class="service-card reveal-rotate">
+            <article class="service-card" data-service-card>
               <div class="service-media">
-                <img src="images/services/service_wordpress.png" alt="WordPress構築アイコン" width="169" height="150" loading="lazy" decoding="async" />
-                <span>03</span>
+                <div class="service-icon">
+                  <img src="images/services/service_wordpress.png" alt="" width="169" height="150" loading="lazy" decoding="async" />
+                </div>
+                <span class="service-number">03</span>
               </div>
-              <h3>WordPress</h3>
-              <p class="service-subtitle">WordPress構築</p>
+              <p class="service-eyebrow">WORDPRESS</p>
+              <h3>WordPress構築</h3>
               <p>オリジナルテーマ制作からカスタム投稿設定まで。更新しやすく運用に強いサイトを構築します。</p>
               <ul>
                 <li>オリジナルテーマ</li>
                 <li>カスタム投稿 / ACF</li>
                 <li>更新しやすい管理画面</li>
-                <li>SEO対策済み</li>
+                <li>基本SEO設定</li>
               </ul>
+              <p class="service-fit"><span>こんな方に</span>お知らせや実績を、自分たちで更新できるサイトが必要な方</p>
             </article>
 
-            <article class="service-card reveal-rotate">
+            <article class="service-card" data-service-card>
               <div class="service-media">
-                <img src="images/services/service_shopify.png" alt="Shopify EC構築アイコン" width="142" height="150" loading="lazy" decoding="async" />
-                <span>04</span>
+                <div class="service-icon">
+                  <img src="images/services/service_shopify.png" alt="" width="142" height="150" loading="lazy" decoding="async" />
+                </div>
+                <span class="service-number">04</span>
               </div>
-              <h3>Shopify</h3>
-              <p class="service-subtitle">Shopify構築</p>
-              <p>Liquidによるカスタム開発とアパレル経験を活かした販促設計。売れるECサイトを構築します。</p>
+              <p class="service-eyebrow">SHOPIFY</p>
+              <h3>Shopify構築</h3>
+              <p>Liquidによるカスタム開発とアパレル経験を活かし、購入につながる導線を意識して構築します。</p>
               <ul>
                 <li>Liquid カスタマイズ</li>
                 <li>セクション / ブロック開発</li>
                 <li>ブランド世界観の再現</li>
-                <li>販促・導線設計</li>
+                <li>購入導線の設計</li>
               </ul>
+              <p class="service-fit"><span>こんな方に</span>ブランドの魅力が伝わるECサイトを立ち上げたい方</p>
             </article>
+          </div>
+
+          <aside class="service-estimate" aria-labelledby="service-estimate-title">
+            <div>
+              <p class="service-estimate-kicker">PRICE &amp; SCHEDULE</p>
+              <h3 id="service-estimate-title">料金・納期の目安について</h3>
+            </div>
+            <dl>
+              <div><dt>料金</dt><dd>制作範囲と必要機能を確認後、個別にお見積りします。</dd></div>
+              <div><dt>納期</dt><dd>素材の準備状況も含め、ご提案時にスケジュールを共有します。</dd></div>
+            </dl>
+            <p>初回相談・お見積りは無料です。ご予算や希望時期が決まっていない段階でもご相談いただけます。</p>
+          </aside>
+
+          <div class="service-cta">
+            <p><strong>どのサービスを選べばよいかわからなくても大丈夫です。</strong><span>現在のお悩みや目的を伺い、必要な内容から一緒に整理します。</span></p>
+            <a class="button-link button-link-primary" href="#contact">無料で相談する</a>
           </div>
         </div>
       </section>
 
       <section class="flow section-block" id="flow" aria-label="制作フロー">
         <div class="container">
-          <div class="section-title reveal-rotate">
-            <p class="section-kicker">FLOW</p>
-            <h2>制作の流れ</h2>
+          <div class="section-title" data-section-title data-title-label="PROCESS">
+            <div class="section-title-copy">
+              <p class="section-kicker">FLOW</p>
+              <h2>制作の流れ</h2>
+              <p>ご相談から公開後まで、各工程で内容を共有し、ご確認いただきながら進めます。</p>
+            </div>
+            <div class="section-title-art" aria-hidden="true">
+              <span class="title-art-orbit"></span>
+              <span class="title-art-disc"></span>
+              <span class="title-art-square"></span>
+              <span class="title-art-index">04</span>
+            </div>
           </div>
-          <div class="flow-list">
-            <article class="flow-step reveal-rotate">
-              <span>01</span>
-              <h3>ヒアリング・課題整理</h3>
-              <p>現状の課題や目的を丁寧にヒアリングします。</p>
-            </article>
-            <article class="flow-step reveal-rotate">
-              <span>02</span>
-              <h3>戦略設計・ご提案</h3>
-              <p>課題を分析し、最適な構成とプランをご提案。</p>
-            </article>
-            <article class="flow-step reveal-rotate">
-              <span>03</span>
-              <h3>設計・デザイン制作</h3>
-              <p>UI/UX設計からデザイン制作を実施。</p>
-            </article>
-            <article class="flow-step reveal-rotate">
-              <span>04</span>
-              <h3>実装・公開</h3>
-              <p>コーディング・実装を行い、公開・納品します。</p>
-            </article>
-            <article class="flow-step reveal-rotate">
-              <span>05</span>
-              <h3>運用・改善サポート</h3>
-              <p>公開後の分析・改善まで継続的にサポートします。</p>
-            </article>
-          </div>
+          <ol class="flow-list" data-flow-list aria-label="制作工程5ステップ">
+            <li class="flow-item">
+              <article class="flow-step" data-flow-step>
+                <div class="flow-step-meta">
+                  <span class="flow-number">01</span>
+                  <span class="flow-keyword">DISCOVER</span>
+                </div>
+                <h3>ご相談・ヒアリング</h3>
+                <p>目的・ターゲット・必要な機能・ご希望の時期を伺い、課題と優先順位を整理します。</p>
+                <span class="flow-step-accent" aria-hidden="true"></span>
+              </article>
+              <div class="flow-arrow" data-flow-arrow aria-hidden="true">
+                <span class="flow-arrow-line"></span>
+                <span class="flow-arrow-glyph">→</span>
+              </div>
+            </li>
+            <li class="flow-item">
+              <article class="flow-step" data-flow-step>
+                <div class="flow-step-meta">
+                  <span class="flow-number">02</span>
+                  <span class="flow-keyword">PLAN</span>
+                </div>
+                <h3>ご提案・お見積り</h3>
+                <p>サイト構成、制作範囲、スケジュール、お見積りをご提示し、内容をご確認いただいてから制作を開始します。</p>
+                <span class="flow-step-accent" aria-hidden="true"></span>
+              </article>
+              <div class="flow-arrow" data-flow-arrow aria-hidden="true">
+                <span class="flow-arrow-line"></span>
+                <span class="flow-arrow-glyph">→</span>
+              </div>
+            </li>
+            <li class="flow-item">
+              <article class="flow-step" data-flow-step>
+                <div class="flow-step-meta">
+                  <span class="flow-number">03</span>
+                  <span class="flow-keyword">DESIGN</span>
+                </div>
+                <h3>情報設計・デザイン</h3>
+                <p>サイト構成とデザインを制作し、ご確認いただきながら方向性や細部を整えます。</p>
+                <span class="flow-step-accent" aria-hidden="true"></span>
+              </article>
+              <div class="flow-arrow" data-flow-arrow aria-hidden="true">
+                <span class="flow-arrow-line"></span>
+                <span class="flow-arrow-glyph">→</span>
+              </div>
+            </li>
+            <li class="flow-item">
+              <article class="flow-step" data-flow-step>
+                <div class="flow-step-meta">
+                  <span class="flow-number">04</span>
+                  <span class="flow-keyword">BUILD</span>
+                </div>
+                <h3>実装・確認・公開</h3>
+                <p>レスポンシブ対応やアニメーションを実装し、表示・動作確認を行ったうえで公開します。</p>
+                <span class="flow-step-accent" aria-hidden="true"></span>
+              </article>
+              <div class="flow-arrow" data-flow-arrow aria-hidden="true">
+                <span class="flow-arrow-line"></span>
+                <span class="flow-arrow-glyph">→</span>
+              </div>
+            </li>
+            <li class="flow-item">
+              <article class="flow-step" data-flow-step>
+                <div class="flow-step-meta">
+                  <span class="flow-number">05</span>
+                  <span class="flow-keyword">GROW</span>
+                </div>
+                <h3>公開後のサポート</h3>
+                <p>公開後の更新・修正・運用改善についても、必要に応じてご相談いただけます。</p>
+                <span class="flow-step-accent" aria-hidden="true"></span>
+              </article>
+            </li>
+          </ol>
+          <p class="flow-note">制作期間はページ数や機能、素材の準備状況によって異なります。ご提案時に制作範囲とスケジュールを共有します。</p>
         </div>
       </section>
 
@@ -295,97 +733,84 @@
         </div>
       </section>
 
-      <section class="works section-block" id="works" aria-label="制作実績">
+      <section class="faq section-block" id="faq" aria-label="よくあるご質問">
         <div class="container">
-          <div class="section-title section-title-wide reveal-rotate">
-            <p class="section-kicker">WORKS</p>
-            <h2>制作実績</h2>
-            <p>目的や業種に合わせて制作したWebサイトの一部をご紹介します。</p>
+          <div class="section-title section-title-wide" data-section-title data-title-label="FAQ">
+            <div class="section-title-copy">
+              <p class="section-kicker">FAQ</p>
+              <h2>よくあるご質問</h2>
+              <p>ご相談前によくいただくご質問をまとめました。</p>
+            </div>
+            <div class="section-title-art" aria-hidden="true">
+              <span class="title-art-orbit"></span>
+              <span class="title-art-disc"></span>
+              <span class="title-art-square"></span>
+              <span class="title-art-index">05</span>
+            </div>
           </div>
 
-          <div class="works-list">
-            <a class="work-row reveal-rotate" href="https://hiro329biz-cpu.github.io/-FLOW/" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source srcset="images/works/mockup_andflow.webp" type="image/webp" />
-                <img src="images/works/mockup_andflow.jpg" alt="＆FLOW様 デザイン・コーディング制作実績" width="1000" height="750" loading="lazy" decoding="async" />
-              </picture>
-              <div class="work-content">
-                <p class="work-category">デザイン/コーディング</p>
-                <h3>＆FLOW 様</h3>
-                <p>ブランドの世界観がひと目で伝わるWebサイトとして、余白・配色・アニメーションの心地よさまで丁寧に設計。PCからスマホまで印象が崩れないレスポンシブ実装に仕上げました。</p>
-                <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li></ul>
-              </div>
-            </a>
-
-            <a class="work-row reveal-rotate" href="https://hiro329biz-cpu.github.io/Hair_salon-site/" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source srcset="images/works/mockup_fleur.webp" type="image/webp" />
-                <img src="images/works/mockup_fleur.jpg" alt="Fleur様 美容サロンサイト デザイン・コーディング制作実績" width="1000" height="859" loading="lazy" decoding="async" />
-              </picture>
-              <div class="work-content">
-                <p class="work-category">デザイン/コーディング</p>
-                <h3>Fleur 様</h3>
-                <p>美容サロンの上質で落ち着いた世界観を表現。余白を活かしたレイアウトと柔らかな写真配置で、サロンの雰囲気やサービス内容が自然に伝わるレスポンシブサイトに仕上げました。</p>
-                <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li></ul>
-              </div>
-            </a>
-
-            <a class="work-row reveal-rotate" href="https://hiro329biz-cpu.github.io/Architectural-site/" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source srcset="images/works/mockup_takumi.webp" type="image/webp" />
-                <img src="images/works/mockup_takumi.jpg" alt="匠建設株式会社様 建設会社サイト デザイン・コーディング制作実績" width="1000" height="903" loading="lazy" decoding="async" />
-              </picture>
-              <div class="work-content">
-                <p class="work-category">デザイン/コーディング</p>
-                <h3>匠建設株式会社 様</h3>
-                <p>建設会社としての信頼感と実績が伝わるWebサイト。力強い写真を軸に、事業内容・施工実績・お問い合わせ導線を整理し、堅実さと見やすさを両立したレスポンシブサイトに仕上げました。</p>
-                <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li></ul>
-              </div>
-            </a>
-
-            <a class="work-row reveal-rotate" href="https://hiro329biz-cpu.github.io/AURORA-MEDIA/" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source srcset="images/works/mockup_aurora.webp" type="image/webp" />
-                <img src="images/works/mockup_aurora.jpg" alt="AURORA MEDIA様 広告メディアサイト デザイン・コーディング制作実績" width="1000" height="900" loading="lazy" decoding="async" />
-              </picture>
-              <div class="work-content">
-                <p class="work-category">デザイン/コーディング</p>
-                <h3>AURORA MEDIA 様</h3>
-                <p>広告メディア企業のスピード感と成果へのこだわりを表現。モノトーンを基調にオレンジのアクセントを効かせ、事業内容・導入事例・お問い合わせまで迷わず進めるレスポンシブサイトに仕上げました。</p>
-                <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li></ul>
-              </div>
-            </a>
-
-            <a class="work-row reveal-rotate" href="https://wp.hiro-portfolio.com/" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source srcset="images/works/mockup_globalstandard_new.webp" type="image/webp" />
-                <img src="images/works/mockup_globalstandard_new.jpg" alt="Global standard様 WordPressサイト デザイン・コーディング制作実績" width="1000" height="802" loading="lazy" decoding="async" />
-              </picture>
-              <div class="work-content">
-                <p class="work-category">デザイン/コーディング</p>
-                <h3>Global standard 様</h3>
-                <p>グローバルな信頼感と先進性が伝わるコーポレートサイト。情報設計からレスポンシブ実装、WordPress化まで見据え、企業の強みやサービス内容をわかりやすく届ける構成に仕上げました。</p>
-                <ul><li>HTML/CSS</li><li>JavaScript</li><li>レスポンシブ</li><li>WordPress</li></ul>
-              </div>
-            </a>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary><span class="faq-index">Q01</span><span class="faq-question">相談や見積りは無料ですか？</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+              <div class="faq-answer"><p>はい、ヒアリングとお見積りは無料です。内容が固まっていない段階でも、お気軽にご相談ください。</p></div>
+            </details>
+            <details class="faq-item">
+              <summary><span class="faq-index">Q02</span><span class="faq-question">まだ依頼内容が固まっていなくても相談できますか？</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+              <div class="faq-answer"><p>はい。サイトの目的や現在のお悩みを伺い、必要なページや機能を一緒に整理してご提案します。</p></div>
+            </details>
+            <details class="faq-item">
+              <summary><span class="faq-index">Q03</span><span class="faq-question">コーディングだけでも依頼できますか？</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+              <div class="faq-answer"><p>はい。ご支給いただいたデザインデータをもとに、レスポンシブ対応やアニメーションを含めて実装できます。</p></div>
+            </details>
+            <details class="faq-item">
+              <summary><span class="faq-index">Q04</span><span class="faq-question">WordPressやShopifyにも対応していますか？</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+              <div class="faq-answer"><p>はい。WordPressのオリジナルテーマ制作や、ShopifyのLiquidカスタマイズに対応しています。</p></div>
+            </details>
+            <details class="faq-item">
+              <summary><span class="faq-index">Q05</span><span class="faq-question">制作期間はどのくらいですか？</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+              <div class="faq-answer"><p>ページ数や機能、素材の準備状況によって異なります。ヒアリング後に、作業範囲とあわせて無理のないスケジュールをご提案します。</p></div>
+            </details>
+            <details class="faq-item">
+              <summary><span class="faq-index">Q06</span><span class="faq-question">札幌以外からも依頼できますか？</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+              <div class="faq-answer"><p>はい。オンラインで全国からのご相談に対応しています。進行状況もわかりやすく共有します。</p></div>
+            </details>
           </div>
         </div>
       </section>
 
       <section class="contact section-block" id="contact" aria-label="お問い合わせ">
-        <div class="container contact-inner reveal-rotate">
-          <p class="section-kicker">CONTACT</p>
-          <h2>お問い合わせ</h2>
-          <p class="contact-lead">「こんなサイトを作りたい」「まずは相談だけ」など、どんなことでもお気軽にご連絡ください。ヒアリング・お見積りは無料です。2営業日以内にご返信いたします。</p>
-          <a class="contact-link" href="mailto:h.329@design-hiro.com">CONTACT</a>
-          <p class="contact-mail">h.329@design-hiro.com</p>
+        <div class="container contact-inner">
+          <div class="section-title section-title-contact" data-section-title data-title-label="CONTACT">
+            <div class="section-title-copy">
+              <p class="section-kicker">CONTACT</p>
+              <h2>お問い合わせ</h2>
+              <p>内容が固まっていない段階でも大丈夫です。現在のお悩みや目的から、一緒に整理します。</p>
+            </div>
+            <div class="section-title-art" aria-hidden="true">
+              <span class="title-art-orbit"></span>
+              <span class="title-art-disc"></span>
+              <span class="title-art-square"></span>
+              <span class="title-art-index">06</span>
+            </div>
+          </div>
+          <ul class="contact-reassurance" data-contact-reassurance aria-label="お問い合わせについてのご案内">
+            <li><strong>相談・お見積り無料</strong></li>
+            <li><strong>全国オンライン対応</strong></li>
+            <li><strong>2営業日以内に返信</strong></li>
+          </ul>
 
-          <div class="contact-form-wrap">
-            <form action="https://formspree.io/f/mojpnvrz" method="POST">
-              <input type="hidden" name="_to" value="h.329@design-hiro.com" />
+          <div class="contact-form-wrap" data-contact-form-wrap>
+            <form id="contact-form" action="https://formspree.io/f/mojpnvrz" method="POST" data-contact-form>
               <input type="hidden" name="_subject" value="ポートフォリオサイトからのお問い合わせ" />
               <input type="hidden" name="_next" value="https://hiro-portfolio.com/#contact" />
               <input type="hidden" name="_language" value="ja" />
+
+              <div class="form-honeypot" aria-hidden="true">
+                <label for="contact-company-url">この項目は入力しないでください</label>
+                <input type="text" id="contact-company-url" name="_gotcha" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <p class="form-required-note"><span class="required" aria-hidden="true">*</span> は必須項目です</p>
 
               <div class="form-row">
                 <div class="form-group">
@@ -398,26 +823,65 @@
                 </div>
               </div>
 
-              <div class="form-group">
-                <span class="form-label">ご相談の種類</span>
+              <fieldset class="form-group">
+                <legend class="form-label">ご相談の種類 <span class="optional">任意</span></legend>
                 <div class="checkbox-grid">
-                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="コーディング" /><span>コーディング</span></label>
-                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="WordPress" /><span>WordPress</span></label>
-                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="Shopify" /><span>Shopify</span></label>
-                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="サイト修正" /><span>サイト修正</span></label>
-                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="その他" /><span>その他</span></label>
-                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="まずは相談" /><span>まずは相談</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="Webサイト・LP制作" /><span>Webサイト・LP制作</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="コーディング・サイト修正" /><span>コーディング・サイト修正</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="WordPress構築" /><span>WordPress構築</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="Shopify構築" /><span>Shopify構築</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="公開後の運用・改善" /><span>公開後の運用・改善</span></label>
+                  <label class="checkbox-item"><input type="checkbox" name="type[]" value="まだ決まっていない" /><span>まだ決まっていない</span></label>
+                </div>
+              </fieldset>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-budget">ご予算の目安 <span class="optional">任意</span></label>
+                  <select id="contact-budget" name="budget">
+                    <option value="">選択してください</option>
+                    <option value="未定・相談したい">未定・相談したい</option>
+                    <option value="10万円未満">10万円未満</option>
+                    <option value="10〜30万円">10〜30万円</option>
+                    <option value="30〜50万円">30〜50万円</option>
+                    <option value="50万円以上">50万円以上</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-schedule">公開希望時期 <span class="optional">任意</span></label>
+                  <select id="contact-schedule" name="schedule">
+                    <option value="">選択してください</option>
+                    <option value="未定・相談したい">未定・相談したい</option>
+                    <option value="できるだけ早く">できるだけ早く</option>
+                    <option value="1〜2か月以内">1〜2か月以内</option>
+                    <option value="3か月以降">3か月以降</option>
+                  </select>
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="contact-message">お問い合わせ内容 <span class="required">*</span></label>
-                <textarea id="contact-message" name="message" rows="6" required placeholder="ご依頼内容やご相談をお書きください。&#10;予算感やスケジュールのご希望があれば併せてお知らせください。"></textarea>
+                <label for="contact-message">ご相談内容 <span class="required">*</span></label>
+                <p class="form-help" id="contact-message-help">分かる範囲で構いません。決まっていない部分は「未定」とご記入ください。</p>
+                <textarea id="contact-message" name="message" rows="6" required aria-describedby="contact-message-help" placeholder="サイトの目的や現在のお悩み、必要なページ・機能などをお書きください。"></textarea>
+              </div>
+
+              <div class="privacy-agreement">
+                <details class="privacy-policy" id="privacy-policy">
+                  <summary>個人情報の取り扱いを確認する</summary>
+                  <div>
+                    <p>ご入力いただいた情報は、お問い合わせへの回答と制作に関する連絡にのみ利用し、法令に基づく場合を除いて第三者へ提供しません。送信処理にはFormspreeを利用しています。</p>
+                  </div>
+                </details>
+                <label class="privacy-consent">
+                  <input type="checkbox" name="privacy_agreement" value="同意する" required />
+                  <span>上記の個人情報の取り扱いに同意する <b class="required">*</b></span>
+                </label>
               </div>
 
               <div class="form-submit">
-                <button type="submit" class="form-submit-button">送信する <span aria-hidden="true">→</span></button>
-                <p class="form-note">通常2営業日以内にご返信いたします</p>
+                <button type="submit" class="form-submit-button"><span data-submit-label>無料で相談する</span> <span aria-hidden="true">→</span></button>
+                <p class="form-note">送信内容を確認し、通常2営業日以内にご連絡します。</p>
+                <p class="form-status" data-form-status role="status" aria-live="polite"></p>
               </div>
             </form>
           </div>
@@ -427,21 +891,28 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <a class="footer-logo" href="#" aria-label="HIRO CODE ホーム">
+        <a class="footer-logo" href="#hero" aria-label="HIRO CODE ホーム">
           <img src="images/brand/logo.png" alt="HIRO CODE" width="250" height="60" loading="lazy" decoding="async" />
         </a>
         <nav class="footer-nav" aria-label="フッターナビゲーション">
           <a href="#about">ABOUT</a>
+          <a href="#works">WORKS</a>
           <a href="#service">SERVICE</a>
           <a href="#flow">FLOW</a>
-          <a href="#works">WORKS</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact">CONTACT</a>
         </nav>
         <p>&copy; 2026 Hiroki Horie. All rights reserved.</p>
       </div>
     </footer>
+
+    <button class="back-to-top" type="button" data-back-to-top aria-label="ページの先頭へ戻る" aria-hidden="true" tabindex="-1">
+      <span class="back-to-top-arrow" aria-hidden="true"></span>
+      <span class="back-to-top-label" aria-hidden="true">TOP</span>
+    </button>
   </div>
 
-  <script src="js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="js/main.min.js?v=20260719-3" defer></script>
 </body>
 </html>
