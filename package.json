@@ -3,9 +3,14 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build-site.mjs",
-    "check": "node scripts/check-site.mjs"
+    "check": "node scripts/check-site.mjs",
+    "preview": "node scripts/serve-site.mjs",
+    "qa:browser": "playwright test",
+    "qa:browser:headed": "playwright test --headed",
+    "qa": "npm run build && npm run check && npm run qa:browser"
   },
   "devDependencies": {
+    "@playwright/test": "^1.54.1",
     "esbuild": "^0.28.1"
   }
 }
